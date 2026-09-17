@@ -1,0 +1,669 @@
+:root{--gold:#d7b66d;--gold2:#f0d89c;--ivory:#f7f0e6;--ink:#15120f;--muted:#c8bda9;--dark:#120f0c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:var(--ivory);font-family:Arial,sans-serif;line-height:1.65}body.splash-active{overflow:hidden}.splash{position:fixed;inset:0;z-index:100;background:#f6eee2;display:grid;place-items:center;transition:opacity .8s ease,visibility .8s}.splash.hide{opacity:0;visibility:hidden;pointer-events:none}.splash video{width:100%;height:100%;object-fit:cover}.skip{position:absolute;right:3vw;bottom:3vw;border:1px solid #8e672c66;background:#fff9;color:#5e431e;padding:.7rem 1rem;letter-spacing:.08em;cursor:pointer}.top{position:fixed;z-index:30;top:0;left:0;right:0;height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:linear-gradient(#100e0cf2,#100e0c99);backdrop-filter:blur(12px);border-bottom:1px solid #d7b66d33}.brand{display:flex;align-items:center;gap:.8rem;font-family:Georgia,serif;letter-spacing:.14em;color:var(--gold2);text-decoration:none;font-size:.78rem}.brand img{width:42px;height:42px;object-fit:cover;border-radius:50%}.top nav{display:flex;gap:1.8rem}.top nav a{color:#f7f0e6;text-decoration:none;font-size:.78rem;letter-spacing:.08em}.top nav a:hover{color:var(--gold)}.tools{display:flex;align-items:center;gap:1rem}.langs{font-size:.72rem;color:#d8c9b1;letter-spacing:.1em}.langs i{color:var(--gold);font-style:normal}#menu{display:none;background:none;border:0;color:white;font-size:1.5rem}.hero{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden}.hero video{position:absolute;width:100%;height:100%;object-fit:cover}.shade{position:absolute;inset:0;background:linear-gradient(90deg,#0d0a08e8 0%,#0d0a0899 48%,#0d0a0833),linear-gradient(0deg,#0d0a08c9,transparent 60%)}.hero-copy{position:relative;z-index:2;width:min(980px,88vw);margin-right:auto;margin-left:6vw;padding-top:70px}.eyebrow{color:var(--gold);font-size:.75rem;letter-spacing:.22em;font-weight:700}h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.12}h1{font-size:clamp(2.25rem,4.8vw,4.8rem);max-width:980px;margin:.3em 0}h2{font-size:clamp(2rem,4vw,4rem);margin:.25em 0 .6em}h3{font-size:1.42rem;color:var(--gold)}.hero-copy>p:not(.eyebrow){max-width:720px;font-size:1.08rem}.btn{display:inline-block;margin-top:1.2rem;padding:.9rem 1.4rem;border:1px solid var(--gold);background:var(--gold);color:#16120d;text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-weight:700;font-size:.76rem}.ghost{background:transparent;color:var(--ivory)}.sound{position:absolute;z-index:3;right:3vw;bottom:3vw;border:1px solid #e5c77a66;background:#100e0c99;color:#f5ead7;padding:.65rem .9rem;cursor:pointer}.scroll{position:absolute;z-index:3;bottom:3vw;left:50%;color:#f2d998;text-decoration:none;font-size:1.5rem;animation:float 1.8s ease-in-out infinite}@keyframes float{50%{transform:translateY(7px)}}section:not(.hero){padding:110px max(6vw,24px)}.dark{background:#15110e}.glow-bg{background:radial-gradient(circle at 85% 10%,#b4812c2e,transparent 28%),radial-gradient(circle at 8% 82%,#d7b66d18,transparent 25%),radial-gradient(circle at 60% 60%,#7e4d1710,transparent 30%),#15110e}.intro{text-align:center}.intro p:last-child,.lead{max-width:900px;margin:0 auto;font-size:1.08rem}.light{background:var(--ivory);color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:3rem;background:#d2c4ad}.grid article{padding:2rem;background:#faf5ec}.grid article>span{font-size:.72rem;letter-spacing:.15em;color:#8d7448}.dark .grid{grid-template-columns:repeat(3,1fr);background:#d7b66d2c}.dark .grid article{background:#1c1713}.dark .grid article p{color:#d8d0c4}.visual{min-height:72vh;display:flex;align-items:end;background:linear-gradient(90deg,#0e0b08e8,#0e0b0844),url('assets/hero-poster.jpg') center/cover}.visual>div{max-width:720px}.split{display:grid;grid-template-columns:1.2fr 1fr;gap:6vw;align-items:center}.contact{text-align:center}.contact form{max-width:900px;margin:2.5rem auto 1rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:left}.contact label{font-size:.8rem;color:var(--muted);letter-spacing:.06em}.contact input,.contact textarea{width:100%;margin-top:.4rem;padding:1rem;background:#0f0d0b;border:1px solid #d7b66d55;color:white;font:inherit}.wide{grid-column:1/-1}.contact button{justify-self:start;border:0}.contact small{color:#9e9486}footer{padding:30px 6vw;display:flex;justify-content:space-between;gap:1rem;color:#a99d8c;border-top:1px solid #d7b66d26;font-size:.8rem}@media(max-width:850px){.top nav{display:none;position:absolute;top:74px;left:0;right:0;padding:1.5rem 5vw;background:#100e0cf5;flex-direction:column}.top nav.open{display:flex}#menu{display:block}.langs{display:none}.grid,.dark .grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.hero-copy{margin-left:6vw}.brand span{display:none}}@media(max-width:560px){section:not(.hero){padding:80px 24px}.grid,.dark .grid,.contact form{grid-template-columns:1fr}.wide{grid-column:auto}.hero-copy{width:88vw}.hero-copy h1{font-size:2.25rem}.sound{bottom:22px;right:22px}.scroll{display:none}footer{flex-direction:column}.splash video{object-fit:contain;background:#f6eee2}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scroll{animation:none}}
+
+/* v3 — clean cinematic intro + separate readable SEO copy */
+.hero{min-height:0;height:auto;aspect-ratio:16/9;margin-top:74px;background:#090806;position:relative;display:block;overflow:hidden}
+.hero video{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero .sound{bottom:24px;right:28px}
+.hero .scroll{bottom:20px}
+.hero-text{padding-top:clamp(76px,7vw,118px)!important;padding-bottom:clamp(82px,8vw,132px)!important}
+.hero-text>h1{font-size:clamp(2.25rem,3.7vw,4rem);line-height:1.08;max-width:1050px;margin:.32em auto .45em;color:#e4c477;text-wrap:balance}
+.hero-text>.hero-lead{max-width:780px;margin:0 auto;font-size:clamp(1rem,1.25vw,1.15rem);color:#d7cdbc}
+.hero-text>.btn{margin-top:1.8rem}
+.philosophy-note{max-width:920px;margin:clamp(70px,7vw,110px) auto 0;padding-top:clamp(52px,5vw,76px);border-top:1px solid #d7b66d38}
+.philosophy-note h2{font-size:clamp(1.9rem,3vw,3.25rem);color:#f4eadb}
+.philosophy-note>p:last-child{max-width:850px;margin:0 auto;color:#d7cdbc}
+@media(max-width:850px){.hero{margin-top:74px}.hero-text>h1{font-size:clamp(2rem,6vw,3rem)}}
+@media(max-width:560px){.hero{aspect-ratio:16/10}.hero video{object-fit:cover}.hero-text>h1{font-size:clamp(1.9rem,9vw,2.5rem)}.hero .sound{bottom:14px;right:14px;font-size:.7rem;padding:.5rem .7rem}}
+
+/* v4 — always fit logo animation and cinematic intro inside the visible browser viewport */
+.splash{padding:clamp(12px,2vw,28px);overflow:hidden}
+.splash video{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:#f6eee2}
+.hero{height:calc(100svh - 74px);min-height:0;aspect-ratio:auto;margin-top:74px;background:#090806;display:flex;align-items:center;justify-content:center}
+.hero video{position:relative;width:100%;height:100%;object-fit:contain;object-position:center;background:#090806}
+@media(max-width:560px){.splash{padding:8px}.hero{height:calc(100svh - 74px);aspect-ratio:auto}.hero video{object-fit:contain}}
+
+/* v5 — logo intro is a true square card, never stretched to viewport width */
+.splash{
+  padding:clamp(18px,3vh,32px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f6eee2;
+}
+.splash video{
+  width:min(82vw,82vh) !important;
+  height:auto !important;
+  max-width:820px !important;
+  max-height:82vh !important;
+  aspect-ratio:1 / 1;
+  object-fit:contain !important;
+  object-position:center !important;
+  display:block;
+  flex:none;
+  background:#f6eee2;
+}
+@media (max-width:700px){
+  .splash video{
+    width:min(92vw,78vh) !important;
+    max-height:78vh !important;
+  }
+}
+
+/* v7 — stronger visual hierarchy for the main SEO headline */
+.hero-text>h1{
+  color:#F3CD68;
+  text-shadow:0 0 14px rgba(243,205,104,.10), 0 1px 0 rgba(255,239,185,.08);
+}
+
+/* v8 — lighter champagne eyebrow to separate it from the main gold H1 */
+.hero-text>.eyebrow{
+  color:#F7E7B2;
+  text-shadow:0 0 8px rgba(247,231,178,.08);
+}
+
+/* v9 — warmer cream/champagne EVENTS section with clearer luxury card separation */
+#events.light{
+  background:#F3E4C8;
+  color:#17120d;
+}
+#events .grid{
+  background:#C7A76B;
+  gap:1px;
+}
+#events .grid article{
+  background:#FFF8EC;
+}
+#events .grid article>span{
+  color:#8A682E;
+}
+#events .grid h3{
+  color:#B8862F;
+}
+
+/* v10 — unify all light sections with the approved cream/champagne palette */
+.light{
+  background:#F3E4C8;
+  color:#17120d;
+}
+#about.light{
+  background:#F3E4C8;
+}
+#about .eyebrow{
+  color:#8A682E;
+}
+#about h2{
+  color:#B8862F;
+}
+#about > p{
+  color:#2A2118;
+}
+
+/* v11 — dedicated Portfolio visual approved for “Каждый проект начинается с идеи” */
+#portfolio.portfolio-concept{
+  min-height:72vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:clamp(72px,8vw,120px) max(6vw,24px);
+  background-image:url('assets/portfolio-concept.png');
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:#F7F0E6;
+}
+#portfolio.portfolio-concept::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(14,11,8,.20) 0%,rgba(14,11,8,.05) 38%,rgba(14,11,8,0) 58%);
+}
+#portfolio .portfolio-copy{
+  position:relative;
+  z-index:1;
+  width:min(42%,680px);
+  max-width:680px;
+}
+#portfolio .portfolio-copy h2,
+#portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto),
+#portfolio .portfolio-copy>.eyebrow{
+  /* Text is already art-directed in the approved visual; keep HTML text for SEO/accessibility without duplicating it visually. */
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+#portfolio .portfolio-copy .btn{
+  position:absolute;
+  left:0;
+  top:clamp(245px,24vw,390px);
+  opacity:0;
+  width:330px;
+  height:70px;
+  margin:0;
+}
+#portfolio .portfolio-motto{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+}
+@media(max-width:850px){
+  #portfolio.portfolio-concept{
+    min-height:64vh;
+    background-position:center center;
+  }
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept{
+    min-height:62vh;
+    background-size:cover;
+    background-position:56% center;
+  }
+  #portfolio .portfolio-copy .btn{display:none}
+}
+
+/* v12 — Portfolio visual: preserve the full approved 16:9 composition without cropping */
+#portfolio.portfolio-concept{
+  min-height:0;
+  width:100%;
+  aspect-ratio:1648 / 928;
+  padding:0;
+  display:block;
+  background-size:contain;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-color:#120e0a;
+}
+#portfolio.portfolio-concept::after{display:none;}
+#portfolio .portfolio-copy{
+  position:absolute;
+  inset:0;
+  width:100%;
+  max-width:none;
+}
+@media(max-width:850px){
+  #portfolio.portfolio-concept{
+    min-height:0;
+    aspect-ratio:1648 / 928;
+    background-size:contain;
+    background-position:center center;
+  }
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept{
+    min-height:0;
+    aspect-ratio:1648 / 928;
+    background-size:contain;
+    background-position:center center;
+  }
+}
+
+/* v13 — unified gold hierarchy across dark content sections */
+#studio > .eyebrow,
+#contact > .eyebrow{
+  color:#F7E7B2;
+  text-shadow:0 0 8px rgba(247,231,178,.08);
+}
+#studio > h2,
+#contact > h2{
+  color:#F3CD68;
+  text-shadow:0 0 14px rgba(243,205,104,.10), 0 1px 0 rgba(255,239,185,.08);
+}
+
+/* v14 — Portfolio heading aligned with the approved gold/champagne hierarchy */
+#portfolio.portfolio-concept::before{
+  content:"";
+  position:absolute;
+  z-index:1;
+  left:0;
+  top:0;
+  width:47%;
+  height:48%;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(20,15,10,.98) 0%,rgba(20,15,10,.94) 60%,rgba(20,15,10,.72) 82%,rgba(20,15,10,0) 100%);
+}
+#portfolio .portfolio-copy{z-index:2;}
+#portfolio .portfolio-copy>.eyebrow,
+#portfolio .portfolio-copy>h2{
+  position:relative;
+  width:auto;
+  height:auto;
+  padding:0;
+  margin:0;
+  overflow:visible;
+  clip:auto;
+  white-space:normal;
+  border:0;
+}
+#portfolio .portfolio-copy>.eyebrow{
+  color:#F7E7B2;
+  font-size:clamp(.72rem,.9vw,.86rem);
+  letter-spacing:.22em;
+  font-weight:700;
+  margin-bottom:1.25rem;
+}
+#portfolio .portfolio-copy>h2{
+  color:#F3CD68;
+  font-size:clamp(2.35rem,4.2vw,4.5rem);
+  line-height:1.08;
+  max-width:680px;
+  margin:0;
+  text-wrap:balance;
+}
+@media(max-width:850px){
+  #portfolio.portfolio-concept::before{width:68%;height:48%;}
+  #portfolio .portfolio-copy{width:min(62%,680px);}
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept::before{width:100%;height:43%;background:linear-gradient(180deg,rgba(20,15,10,.98) 0%,rgba(20,15,10,.90) 72%,rgba(20,15,10,0) 100%);}
+  #portfolio .portfolio-copy{width:100%;}
+  #portfolio .portfolio-copy>h2{font-size:clamp(2rem,9vw,2.8rem);}
+}
+
+/* v15 — Portfolio: one clean HTML text layer, no duplicated baked-in heading */
+#portfolio.portfolio-concept::before{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:0 auto 0 0;
+  width:43%;
+  height:100%;
+  pointer-events:none;
+  background:linear-gradient(90deg,#140f0b 0%,#140f0b 72%,rgba(20,15,11,.94) 84%,rgba(20,15,11,0) 100%);
+}
+#portfolio .portfolio-copy{
+  position:absolute;
+  z-index:2;
+  inset:0 auto 0 0;
+  width:43%;
+  max-width:none;
+  padding:8.5% 2.5% 4.2% 5.2%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+#portfolio .portfolio-copy>.eyebrow,
+#portfolio .portfolio-copy>h2,
+#portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto),
+#portfolio .portfolio-motto{
+  position:relative;
+  width:auto;
+  height:auto;
+  padding:0;
+  overflow:visible;
+  clip:auto;
+  white-space:normal;
+  border:0;
+}
+#portfolio .portfolio-copy>.eyebrow{
+  color:#F7E7B2;
+  font-size:clamp(.68rem,.9vw,.92rem);
+  letter-spacing:.22em;
+  font-weight:700;
+  margin:0 0 1.2rem;
+}
+#portfolio .portfolio-copy>h2{
+  color:#F3CD68;
+  font-size:clamp(2.2rem,3.9vw,4.15rem);
+  line-height:1.08;
+  max-width:650px;
+  margin:0 0 1.45rem;
+  text-shadow:0 0 14px rgba(243,205,104,.10),0 1px 0 rgba(255,239,185,.08);
+}
+#portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto){
+  color:#E9E0D3;
+  font-size:clamp(.88rem,1.15vw,1.12rem);
+  line-height:1.55;
+  max-width:520px;
+  margin:0 0 1.7rem;
+}
+#portfolio .portfolio-copy .btn{
+  position:relative;
+  left:auto;
+  top:auto;
+  opacity:1;
+  width:auto;
+  height:auto;
+  margin:0;
+  padding:.9rem 1.45rem;
+  border:1px solid #D9BA70;
+  color:#F7E7B2;
+  background:transparent;
+}
+#portfolio .portfolio-motto{
+  color:#D9BA70;
+  font-family:"Segoe Script","Brush Script MT",cursive;
+  font-size:clamp(1.35rem,2.05vw,2.2rem);
+  line-height:1.25;
+  max-width:310px;
+  margin:auto 0 0;
+  padding-bottom:1.15rem;
+}
+#portfolio .portfolio-motto::after{
+  content:"";
+  display:block;
+  width:155px;
+  height:1px;
+  margin-top:1.25rem;
+  background:#D9BA70;
+}
+@media(max-width:850px){
+  #portfolio.portfolio-concept::before{width:54%;}
+  #portfolio .portfolio-copy{width:54%;padding:7% 3% 3.5% 4.5%;}
+  #portfolio .portfolio-copy>h2{font-size:clamp(1.7rem,4.5vw,2.8rem);margin-bottom:.8rem;}
+  #portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto){font-size:clamp(.72rem,1.5vw,.95rem);margin-bottom:1rem;}
+  #portfolio .portfolio-motto{font-size:clamp(1rem,2.3vw,1.55rem);}
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept::before{width:100%;background:linear-gradient(90deg,rgba(20,15,11,.98),rgba(20,15,11,.80));}
+  #portfolio .portfolio-copy{width:100%;padding:7% 7% 5%;}
+  #portfolio .portfolio-copy>.eyebrow{margin-bottom:.55rem;font-size:.58rem;}
+  #portfolio .portfolio-copy>h2{font-size:clamp(1.35rem,7vw,2rem);max-width:75%;}
+  #portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto){max-width:70%;font-size:.7rem;line-height:1.35;}
+  #portfolio .portfolio-copy .btn{display:inline-block;font-size:.58rem;padding:.55rem .8rem;}
+  #portfolio .portfolio-motto{font-size:.9rem;padding-bottom:0;}
+  #portfolio .portfolio-motto::after{width:90px;margin-top:.55rem;}
+}
+
+/* v16 — EVENTS heading: approved warm deep gold from the visual reference */
+#events > .eyebrow{
+  color:#C99742;
+}
+#events > h2{
+  color:#8A4F0F;
+  text-shadow:0 1px 0 rgba(255,248,230,.20);
+}
+
+
+/* v17 — Russian Creative Studio card titles + refined gold frame */
+#studio .grid.studio{
+  border:1px solid rgba(240,216,156,.78);
+  box-shadow:0 0 0 1px rgba(215,182,109,.10), 0 0 22px rgba(215,182,109,.07);
+  background:rgba(215,182,109,.34);
+}
+#studio .grid.studio article{
+  border:0;
+}
+#studio .grid.studio h3{
+  color:#F0C75E;
+}
+@media(max-width:560px){
+  #studio .grid.studio{box-shadow:0 0 14px rgba(215,182,109,.06);}
+}
+
+/* v18 — restore the previously approved handwritten motto typography */
+#portfolio .portfolio-motto{
+  font-family:"Segoe Script","Brush Script MT",cursive !important;
+  font-style:normal !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+}
+
+/* v19 — restore the exact approved motto artwork from the original portfolio visual */
+#portfolio .portfolio-motto{
+  font-size:0 !important;
+  line-height:0 !important;
+  width:min(320px,100%) !important;
+  height:auto !important;
+  aspect-ratio:320/155;
+  max-width:320px !important;
+  margin:auto 0 0 !important;
+  padding:0 !important;
+  background:url('assets/portfolio-motto-approved.png') left bottom / contain no-repeat;
+  color:transparent !important;
+}
+#portfolio .portfolio-motto::after{display:none !important;}
+@media(max-width:850px){
+  #portfolio .portfolio-motto{width:min(230px,100%) !important;}
+}
+@media(max-width:560px){
+  #portfolio .portfolio-motto{width:min(180px,100%) !important;}
+}
+
+/* v20 — EVENTS: refined thin gold framing around the four service cards */
+#events .grid{
+  gap:0;
+  background:#FFF8EC;
+  border:1px solid #C99A45;
+  border-radius:2px;
+  overflow:hidden;
+  box-shadow:none;
+}
+#events .grid article{
+  background:#FFF8EC;
+  border:0;
+  border-right:1px solid #C99A45;
+  box-shadow:none;
+}
+#events .grid article:last-child{
+  border-right:0;
+}
+@media(max-width:850px){
+  #events .grid article:nth-child(2){border-right:0}
+  #events .grid article:nth-child(-n+2){border-bottom:1px solid #C99A45}
+}
+@media(max-width:560px){
+  #events .grid article,
+  #events .grid article:nth-child(2){
+    border-right:0;
+    border-bottom:1px solid #C99A45;
+  }
+  #events .grid article:last-child{border-bottom:0}
+}
+
+/* v22 — elegant side-confetti effect for selected sections */
+.confetti-zone{position:relative;overflow:hidden}
+.confetti-layer{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+#philosophy>.confetti-layer,#contact>.confetti-layer{z-index:0}
+#philosophy>*:not(.confetti-layer),#contact>*:not(.confetti-layer){position:relative;z-index:1}
+.confetti-piece{position:absolute;top:-8%;left:var(--x);width:var(--w);height:var(--h);border-radius:var(--r);background:var(--c);opacity:var(--o);box-shadow:0 0 5px color-mix(in srgb,var(--c) 72%,transparent),0 0 10px color-mix(in srgb,var(--c) 28%,transparent);transform:rotate(var(--rot));animation:confettiFall var(--dur) linear var(--delay) infinite;will-change:transform,opacity}
+.confetti-piece.ribbon{border-radius:60% 20% 60% 20%;background:transparent;border:2px solid var(--c);height:calc(var(--h) * 2.3);filter:drop-shadow(0 0 3px var(--c))}
+@keyframes confettiFall{0%{transform:translate3d(0,-12vh,0) rotate(var(--rot));opacity:0}8%{opacity:var(--o)}50%{transform:translate3d(var(--drift),52vh,0) rotate(calc(var(--rot) + 300deg));opacity:var(--o)}92%{opacity:var(--o)}100%{transform:translate3d(calc(var(--drift) * -.35),112vh,0) rotate(calc(var(--rot) + 690deg));opacity:0}}
+.confetti-off .confetti-layer{display:none}
+.confetti-toggle{position:absolute;z-index:4;right:28px;bottom:24px;transform:translateY(-48px);border:1px solid #e5c77a66;background:#100e0c99;color:#f5ead7;padding:.65rem .9rem;cursor:pointer;font-size:.78rem;letter-spacing:.03em}
+.confetti-toggle:hover,.sound:hover{border-color:#e5c77aaa;background:#17120ebd}
+@media(max-width:560px){.confetti-toggle{right:14px;bottom:14px;transform:translateY(-42px);font-size:.68rem;padding:.5rem .7rem}.confetti-piece:nth-child(n+25){display:none}}
+@media(prefers-reduced-motion:reduce){.confetti-layer{display:none}.confetti-toggle{display:none}}
+
+/* v24 — two targeted fixes only: align confetti control and fully mask baked portfolio text */
+.hero .confetti-toggle{
+  right:18px;
+}
+#portfolio.portfolio-concept::before{
+  background:linear-gradient(90deg,#140f0b 0%,#140f0b 92%,rgba(20,15,11,.98) 96%,rgba(20,15,11,0) 100%);
+}
+@media(max-width:560px){
+  .hero .confetti-toggle{right:8px;}
+}
+
+/* v25 — Portfolio: reveal the full open book while keeping the baked-in old copy hidden */
+#portfolio.portfolio-concept::before{
+  width:43%;
+  height:72%;
+  inset:0 auto auto 0;
+  background:
+    linear-gradient(90deg,#140f0b 0%,#140f0b 72%,rgba(20,15,11,.94) 84%,rgba(20,15,11,0) 100%);
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 78%,rgba(0,0,0,.92) 88%,transparent 100%);
+  mask-image:linear-gradient(180deg,#000 0%,#000 78%,rgba(0,0,0,.92) 88%,transparent 100%);
+}
+/* Small local cover for the baked-in original button only; avoids masking the book below. */
+#portfolio .portfolio-copy .btn::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:-10px -18px;
+  background:#140f0b;
+}
+
+/* v26 — targeted portfolio cleanup: hide only baked-in copy/button/motto; keep the full book visible */
+#portfolio.portfolio-concept::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+  pointer-events:none;
+  -webkit-mask-image:none;
+  mask-image:none;
+  background:
+    linear-gradient(#140f0b,#140f0b) left top / 43% 54% no-repeat,
+    linear-gradient(#140f0b,#140f0b) left 54% / 29% 14% no-repeat,
+    linear-gradient(#140f0b,#140f0b) left bottom / 30% 32% no-repeat;
+}
+#portfolio .portfolio-copy{position:relative;z-index:2;}
+@media(max-width:850px){
+  #portfolio.portfolio-concept::before{
+    background:
+      linear-gradient(#140f0b,#140f0b) left top / 54% 54% no-repeat,
+      linear-gradient(#140f0b,#140f0b) left 54% / 38% 14% no-repeat,
+      linear-gradient(#140f0b,#140f0b) left bottom / 38% 32% no-repeat;
+  }
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept::before{
+    background:linear-gradient(90deg,rgba(20,15,11,.98),rgba(20,15,11,.80));
+  }
+}
+
+/* v27 — FINAL approved Portfolio block, rebuilt from the clean source image */
+#portfolio.portfolio-concept{
+  position:relative;
+  min-height:clamp(610px,52vw,940px);
+  background-image:url('assets/portfolio-concept-clean.png') !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  overflow:hidden;
+}
+#portfolio.portfolio-concept::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  width:58% !important;
+  height:100% !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  background:linear-gradient(90deg,rgba(18,13,9,.97) 0%,rgba(18,13,9,.92) 45%,rgba(18,13,9,.68) 72%,rgba(18,13,9,0) 100%) !important;
+  -webkit-mask-image:none !important;
+  mask-image:none !important;
+}
+#portfolio.portfolio-concept::after{display:none !important;}
+#portfolio .portfolio-copy{
+  position:absolute !important;
+  z-index:2 !important;
+  inset:0 auto 0 0 !important;
+  width:43% !important;
+  padding:5.6% 0 3.2% 5.2% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+}
+#portfolio .portfolio-copy>.eyebrow{
+  color:#F2D57D !important;
+  font-size:clamp(.72rem,1.02vw,1rem) !important;
+  letter-spacing:.20em !important;
+  font-weight:600 !important;
+  margin:0 0 1.25rem !important;
+}
+#portfolio .portfolio-copy>h2{
+  color:#F2D57D !important;
+  font-size:clamp(2.35rem,4vw,4.2rem) !important;
+  line-height:1.10 !important;
+  font-weight:400 !important;
+  max-width:660px !important;
+  margin:0 0 1.55rem !important;
+  text-shadow:0 1px 8px rgba(0,0,0,.25) !important;
+}
+#portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto){
+  color:#F1ECE5 !important;
+  font-size:clamp(.9rem,1.15vw,1.12rem) !important;
+  line-height:1.58 !important;
+  max-width:520px !important;
+  margin:0 0 1.55rem !important;
+  padding:1rem 1.25rem !important;
+  background:rgba(13,10,8,.43) !important;
+  border:1px solid rgba(224,190,103,.92) !important;
+  border-radius:18px !important;
+  box-sizing:border-box !important;
+}
+#portfolio .portfolio-copy .btn{
+  margin:0 !important;
+  padding:.95rem 1.55rem !important;
+  border:1px solid #D9BA70 !important;
+  color:#F7E7B2 !important;
+  background:rgba(10,8,7,.36) !important;
+}
+#portfolio .portfolio-motto{
+  width:min(320px,100%) !important;
+  max-width:320px !important;
+  aspect-ratio:320/155 !important;
+  margin:auto 0 0 !important;
+  padding:0 !important;
+  background:url('assets/portfolio-motto-approved.png') left bottom / contain no-repeat !important;
+}
+#portfolio .portfolio-copy .btn::before{display:none !important;}
+@media(max-width:850px){
+  #portfolio.portfolio-concept{min-height:620px;background-position:center center !important;}
+  #portfolio.portfolio-concept::before{width:70% !important;}
+  #portfolio .portfolio-copy{width:56% !important;padding:6% 0 3.5% 4.5% !important;}
+  #portfolio .portfolio-motto{width:min(230px,100%) !important;}
+}
+@media(max-width:560px){
+  #portfolio.portfolio-concept{min-height:600px;background-position:58% center !important;}
+  #portfolio.portfolio-concept::before{width:100% !important;background:linear-gradient(90deg,rgba(18,13,9,.96),rgba(18,13,9,.72)) !important;}
+  #portfolio .portfolio-copy{width:100% !important;padding:7% 7% 5% !important;}
+  #portfolio .portfolio-copy>h2{font-size:clamp(1.5rem,7vw,2.15rem) !important;max-width:82% !important;}
+  #portfolio .portfolio-copy>p:not(.eyebrow):not(.portfolio-motto){max-width:82% !important;font-size:.72rem !important;padding:.75rem .9rem !important;border-radius:12px !important;}
+  #portfolio .portfolio-motto{width:min(180px,100%) !important;}
+}
+
+/* v28 — Portfolio motto: transparent backing; underlying image remains visible */
+#portfolio .portfolio-motto{
+  background-image:url('assets/portfolio-motto-transparent.png') !important;
+  background-color:transparent !important;
+}
+
+/* v29 — compact Portfolio CTA lettering */
+#portfolio .portfolio-copy .btn{
+  letter-spacing:.035em !important;
+  word-spacing:.12em !important;
+}
+
+/* v32 — keep hero controls fully inside the right black gutter in both states */
+.hero .sound,
+.hero .confetti-toggle{
+  right:18px;
+  width:118px;
+  min-width:118px;
+  max-width:118px;
+  padding:.65rem .45rem;
+  text-align:center;
+  white-space:nowrap;
+}
+.hero .confetti-toggle{transform:translateY(-48px)}
+@media(max-width:560px){
+  .hero .sound,
+  .hero .confetti-toggle{
+    right:8px;
+    width:106px;
+    min-width:106px;
+    max-width:106px;
+    padding:.5rem .35rem;
+  }
+  .hero .confetti-toggle{transform:translateY(-42px)}
+}
+
+/* v34 — active RU/FR language switch, identical visual system */
+.langs a, footer a{color:inherit;text-decoration:none}
+.langs a:hover, footer a:hover{color:var(--gold)}
+.langs strong, footer strong{color:var(--gold2);font-weight:700}
