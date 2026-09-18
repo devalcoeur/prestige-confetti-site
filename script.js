@@ -33,7 +33,11 @@ startBackgroundMusic();
 document.addEventListener('DOMContentLoaded',startBackgroundMusic,{once:true});
 window.addEventListener('load',startBackgroundMusic,{once:true});
 logoIntro.addEventListener('ended',startBackgroundMusic,{once:true});
-function unlockMusic(){
+function unlockMusic(event){
+  // The sound button must handle its own user gesture. On mobile,
+  // starting audio in this capture listener first would make the later
+  // button click immediately pause it again.
+  if(event.target.closest && event.target.closest('#soundToggle')) return;
   if(!musicOn) startBackgroundMusic();
 }
 ['pointerdown','mousedown','touchstart','keydown','click'].forEach(evt=>{
